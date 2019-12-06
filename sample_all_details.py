@@ -22,8 +22,8 @@ with open(filepath) as fp:
            }
            h={'X-Requested-With' : 'XMLHttpRequest'}
            r=requests.session()
-           r1=r.post("http://intranet.rguktn.ac.in/SMS/logic/login.php",data=d,headers=h)
-           r2=r.get("http://intranet.rguktn.ac.in/SMS/profile.php")
+           r1=r.post("http://www.abcd/login.php",data=d,headers=h)
+           r2=r.get("http://www.abcd/profile.php")
            a=(r1.text)
            if(a==str("1")):
                a=(r2.text)
